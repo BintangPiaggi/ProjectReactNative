@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image} from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -20,11 +20,15 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
+	 <View style={styles.container}>
         <Text style={styles.welcome}>Welcome!</Text>
         <Text style={styles.instructions}>Bintang Piaggi Putra</Text>
         <Text style={styles.instructions}>Kelas XI RPL 1 </Text>
 		<Text style={styles.instructions}>Absen 10 </Text>
+		<Image
+          style={{width: 300, height: 292}}
+          source={require('./my-icon.jpg')}
+        />
       </View>
     );
   }
@@ -46,5 +50,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+
   },
 });
