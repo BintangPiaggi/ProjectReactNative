@@ -22,13 +22,15 @@ export default class App extends Component<Props> {
   render() {
     return (
 	 <View style={styles.container}>
-        <Judul/>
+        <Judul judul ="Biodata"/>
+        <Judul judul = "Login"/>
+        <Judul judul = "Form"/>
         <Text style={styles.welcome}>Welcome!</Text>
         <Text style={styles.instructions}>Bintang Piaggi Putra</Text>
         <Text style={styles.instructions}>Kelas XI RPL 1 </Text>
 		<Text style={styles.instructions}>Absen 10 </Text>
 		<Image
-          style={{width: 300, height: 292}}
+          style={{width: 200, height: 200}}
           source={require('./my-icon.jpg')}
         />
       </View>
